@@ -212,13 +212,12 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100px;
-  max-height: max-height;
+  height: max-height;
   width: 70%;
   text-align: center;
   background: linear-gradient(180deg, white, lightblue);
   border: darkblue 4px solid;
-  padding: 5px;
+  padding: 10px;
   color: darkblue;
   font-family: "ubuntu", "sans serif";
 }
