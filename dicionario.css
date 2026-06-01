@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('star.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  image-rendering: pixelated;
+  scroll-behavior: smooth;
+}
+
+.cima{
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  background: linear-gradient(180deg, blue, darkblue);
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+header{
+  background-image: url('beach.png');
+  background-size:100% 125px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 96%;
+  height: 125px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius:20px;
+  border: blue 4px solid;
+  font-family: "press start 2p", "sans-serif";
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+header h1{
+  background: linear-gradient(180deg, white, lightblue);
+  background-clip: text;
+  color: transparent;
+}
+
+.pixel1{
+  background: linear-gradient(90deg, transparent, #7724d1, darkblue, #7724d1, transparent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.pixel1 img{
+  width: 20px;
+  height: 20px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro{
+  margin: 8px 0 8px 0;
+  height: max-height;
+  width: 98%;
+  padding: 30px;
+  border: #2418c7 3px solid;
+  border-radius: 40px;
+  font-family: "ubuntu", "sans-serif";
+  color: white;
+  background: #180147;
+  text-align:center;
+}
+
+.letras{
+  display: flex;
+  flex-direction: column;
+  width:98%;
+  height: max-height;
+  margin: 10px 0 10px 0;
+  background: url('space.png');
+  background-size: 200px;
+  border-radius: 20px;
+  padding: 15px;
+  gap: 5px;
+}
+
+.letras a{
+  text-decoration: none;
+  color: white;
+  font-family: "ubuntu", "sans serif";
+  width: 70%;
+  background: linear-gradient(90deg, darkblue, transparent);
+}
+
+.letras a:hover{
+  text-shadow: 0 0 5px white;
+  font-style: italic;
+  background: linear-gradient(90deg, blue, transparent);
+  transition: 0.5s;
+}
+
+.letra{
+  width: 98%;
+  height: max-height;
+  background: rgba(40, 0, 96, 0.6);
+  margin: 10px 0 10px 0;
+  padding: 12px;
+  border-radius: 30px;
+  font-family: "ubuntu";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.letra h2{
+  width:98%;
+  background: linear-gradient(90deg, #6809c6, transparent);
+  border-radius: 30px;
+  color: white;
+  padding-left: 12px;
+}
+
+.palavra{
+  width: 90%;
+  height: max-height;
+  background: #16063f;
+  border: #2418c7 3px solid;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: white;
+}
+
+.palavra h3{
+  color: lightblue;
+}
+
+.voltar{
+  margin: 50px 0 12px 0;
+}
+
+.voltar a{
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(45, 2, 120, 1) 0%, rgba(105, 0, 171, 1) 100%);
+  border-radius:20px;
+  border: 4px #b46eff solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "ubuntu", "sans serif";
+}
+
+.voltar a:hover{
+  transform: scale(1.3);
+  filter: brightness(150%);
+  transition: 0.8s;
+}
+
+footer{
+  margin-top: 50px;
+  background-image: url("space.png");
+  background-size: 200px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+}
+
+.redes h2{
+  margin-top: 10px;
+  font-family: "press start 2p";
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(180deg, white, #b2abff);
+  background-clip: text;
+  color: transparent;
+}
+
+.redes a{
+  width: 70%;
+  background: linear-gradient(90deg, darkblue, transparent);
+  text-decoration: none;
+  color: white;
+}
+
+.redes a:hover{
+  text-shadow: 0 0 5px white;
+  font-style: italic;
+  background: linear-gradient(90deg, blue, transparent);
+  transition: 0.5s;
+}
+
+.compartilhar{
+  color: white;
+  font-family: "ubuntu", "sans serif";
+}
+
+textarea{
+  background: linear-gradient(180deg, white, lightblue);
+}

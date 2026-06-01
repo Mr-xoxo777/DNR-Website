@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('star.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  image-rendering: pixelated;
+}
+
+header{
+  background-image: url('beach.png');
+  background-size:100% 125px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 96%;
+  height: 125px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius:20px;
+  border: blue 4px solid;
+  font-family: "press start 2p", "sans-serif";
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+header h1{
+  background: linear-gradient(180deg, white, lightblue);
+  background-clip: text;
+  color: transparent;
+}
+
+.pixel1{
+  background: linear-gradient(90deg, transparent, #7724d1, darkblue, #7724d1, transparent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.pixel1 img{
+  width: 20px;
+  height: 20px;
+}
+
+h2{
+  margin-top: 10px;
+  font-family: "press start 2p";
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(180deg, white, #b2abff);
+  background-clip: text;
+  color: transparent;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro{
+  margin: 8px 0 8px 0;
+  height: max-height;
+  width: 98%;
+  padding: 30px;
+  border: #2418c7 3px solid;
+  border-radius: 40px;
+  font-family: "ubuntu", "sans-serif";
+  color: white;
+  background: #180147;
+  text-align:center;
+}
+
+.intro a{
+  margin-top: 5px;
+  background: linear-gradient(90deg, blue, darkblue, transparent);
+  text-decoration: underline;
+  color: white;
+}
+
+.intro a:hover{
+  text-shadow: 0 0 5px white;
+  font-style: italic;
+}
+
+.armazem{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin: 18px 0 18px 0;
+  width: 96%;
+  height: max-height;
+  background: rgba(0, 0, 255, 0.28);
+  border-radius: 20px;
+}
+
+.arquivo{
+  width: 90%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px 12px 20px;
+  font-style: italic;
+  position: relative;
+  cursor: pointer;
+}
+
+.back{
+  position: absolute;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.arquivo a{
+  -webkit-text-stroke: 0.9px navy;
+  z-index: 1;
+  font-family: "Press start 2p";
+  background: linear-gradient(180deg, white, lightblue);
+  background-clip: text;
+  color:transparent;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.voltar{
+  margin: 50px 0 12px 0;
+}
+
+.voltar a{
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(45, 2, 120, 1) 0%, rgba(105, 0, 171, 1) 100%);
+  border-radius:20px;
+  border: 4px #b46eff solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "ubuntu", "sans serif";
+}
+
+.voltar a:hover{
+  transform: scale(1.3);
+  filter: brightness(150%);
+  transition: 0.8s;
+}
+
+footer{
+  margin-top: 50px;
+  background-image: url("space.png");
+  background-size: 200px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+}
+
+.redes a{
+  width: 70%;
+  background: linear-gradient(90deg, darkblue, transparent);
+  text-decoration: none;
+  color: white;
+}
+
+.redes a:hover{
+  text-shadow: 0 0 5px white;
+  font-style: italic;
+  background: linear-gradient(90deg, blue, transparent);
+  transition: 0.5s;
+}
+
+.compartilhar{
+  color: white;
+  font-family: "ubuntu", "sans serif";
+}
+
+textarea{
+  background: linear-gradient(180deg, white, lightblue);
+}
