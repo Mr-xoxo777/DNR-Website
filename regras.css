@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('star.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  image-rendering: pixelated;
+  scroll-behavior: smooth;
+}
+
+header{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 96%;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1{
+  font-size: 30px;
+  text-align: center;
+  font-family: "Press start 2p", "sans-serif";
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pixel1{
+  background: linear-gradient(90deg, transparent, blue, transparent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.pixel1 img{
+  width: 20px;
+  height: 20px;
+}
+
+.intro{
+  margin: 8px 0 8px 0;
+  height: max-height;
+  width: 98%;
+  padding: 30px;
+  border: #2418c7 3px solid;
+  border-radius: 40px;
+  font-family: "ubuntu", "sans-serif";
+  color: white;
+  background: #180147;
+  text-align:center;
+}
+
+.topico{
+  margin: 20px 0 20px 0;
+  min-height: 100px;
+  max-height: max-height;
+  width: 96%;
+  background-image: url('space.png');
+  background-size: 200px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  row-gap: 10px;
+}
+
+.topico a{
+  color: white;
+  text-decoration: none;
+  font-family: "ubuntu", "sans serif";
+  background: linear-gradient(90deg, darkblue, transparent);
+}
+
+.topico a:hover{
+  background: linear-gradient(90deg, blue, transparent);
+  transition: 1.3s;
+  text-shadow: 0 0 5px white;
+}
+
+.pode{
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pode h2{
+  text-align: center;
+  font-family: "Press start 2p";
+  color: white;
+}
+
+.obs{
+  text-shadow: 0 0 5px white;
+}
+
+.pbox{
+  margin: 8px 0 8px 0;
+  height: max-height;
+  width: 98%;
+  padding: 30px;
+  border: #2418c7 3px solid;
+  border-radius: 40px;
+  font-family: "ubuntu", "sans-serif";
+  color: white;
+  background: #180147;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.pbox h3{
+  font-family: "Ubuntu", "sans serif";
+  font-size: 20px;
+  background: linear-gradient(90deg, transparent, blue, transparent);
+}
+
+.adicionais{
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adicionais h2{
+  text-align: center;
+  font-family: "Press start 2p";
+  color: white;
+}
+
+.duvida{
+  margin: 8px 0 8px 0;
+  height: max-height;
+  width: 98%;
+  padding: 30px;
+  border: #2418c7 3px solid;
+  border-radius: 40px;
+  font-family: "ubuntu", "sans-serif";
+  color: white;
+  background: #180147;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.duvida a{
+  background: blue;
+  color: white;
+}
+
+.voltar{
+  margin: 50px 0 12px 0;
+}
+
+.voltar a{
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(45, 2, 120, 1) 0%, rgba(105, 0, 171, 1) 100%);
+  border-radius:20px;
+  border: 4px #b46eff solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "ubuntu", "sans serif";
+}
+
+.voltar a:hover{
+  transform: scale(1.3);
+  filter: brightness(150%);
+  transition: 0.8s;
+}
+
+footer{
+  margin-top: 50px;
+  background-image: url("space.png");
+  background-size: 200px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+}
+
+.redes h2{
+  margin-top: 10px;
+  font-family: "press start 2p";
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(180deg, white, #b2abff);
+  background-clip: text;
+  color: transparent;
+}
+
+.redes a{
+  width: 70%;
+  background: linear-gradient(90deg, darkblue, transparent);
+  text-decoration: none;
+  color: white;
+}
+
+.redes a:hover{
+  text-shadow: 0 0 5px white;
+  font-style: italic;
+  background: linear-gradient(90deg, blue, transparent);
+  transition: 0.5s;
+}
+
+.compartilhar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap:5px; 
+  color: white;
+  font-family: "ubuntu", "sans serif";
+}
+
+textarea{
+  background: linear-gradient(180deg, white, lightblue);
+}
