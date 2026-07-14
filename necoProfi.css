@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+/*Lembra de adicionar varias flores a minha página, viu?*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('star.jpg');
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  image-rendering: pixelated;
+}
+
+header{
+  background: url('https://file.garden/ahvCM1_CKg_k_j8l/roseBanner.png');
+  background-size: 550px;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 20px 5px 0;
+}
+
+header h1{
+  font-family: "Merriweather";
+  color: white;
+  background: #FFFFFF;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.72) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+header p{
+  color: white;
+  font-family: "ubuntu", "sans-serif";
+}
+
+.perfil{
+  position: absolute;
+  left: 15px;
+  top: 40px;
+  border-radius: 30px;
+}
+
+.blinkies{
+  z-index: -1;
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blinkies marquee{
+  width: 90%;
+}
+
+main{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.descri{
+  width:1500px;
+  height: 500px;
+  background: red;
+  text-align: center;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 20px;
+  background: rgba(125, 0, 255, 0.38);
+  color: #ebdbff;
+  font-family: "ubuntu", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.descri h2{
+  background: #3a0c96;
+  width: 200px;
+  font-family: "merriweather";
+}
+
+.perso{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.perso img{
+  width:100%;
+}
+
+.curio{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px; 
+  margin-bottom: 30px;
+}
+
+.curio img{
+  width: 50px;
+  height: 50px;
+  animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.boxe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.boxe button{
+  width: 200px;
+  height: 30px;
+  background: linear-gradient(180deg, #006308, #59e000);
+  border: #59e000 solid 4px;
+  border-radius: 30px;
+  color: black;
+  font-family: "ubuntu", "sans-serif";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.boxe button:active{
+  transform: scale(0.7);
+}
+
+.text{
+  width: 300px;
+  height: 100px;
+  background: rgba(0, 139, 17, 0.64);
+  padding: 10px;
+  border-radius: 30px;
+  overflow-y: auto;
+  text-align: center;
+  color: white;
+  font-family: "ubuntu", "sans-serif";
+}
+
+.sobre{
+  background: red;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 30px;
+  row-gap: 20px;
+  background: rgba(125, 0, 255, 0.38);
+}
+
+.sobre summary::marker{
+  content: '🌻';
+}
+
+.sobre h2{
+  color: #ebdbff;
+  background: #3a0c96;
+  width: 80%;
+  font-family: "merriweather";
+  text-align: center;
+}
+
+.coiso summary{
+  color: #ebdbff;
+  font-family: "merriweather";
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+.deta{
+  background: rgba(125, 0, 255, 0.38);
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  text-align: left;
+  color: #ebdbff;
+  font-family: "ubuntu";
+}
+
+.deta h3{
+  background: linear-gradient(90deg, #6a45c1, transparent);
+  padding-left: 10px;
+  font-family: "merriweather";
+}
+
+.refe{
+  /*background: red;*/
+  margin: 20px 0 20px 0;
+  height: max-height;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.refe h2{
+  background: linear-gradient(180deg, white, lightblue);
+  background-clip: text;
+  color: transparent;
+  font-family: "merriweather";
+}
+
+.carrosel{
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  column-gap: 40px;
+}
+
+.paleta{
+  width: 90%;
+  height: 150px;
+  background: red;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  padding: 80px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background: rgba(125, 0, 255, 0.38);
+}
+
+.cor1{
+  background: #FF6600;
+  height: 100px;
+  width: 70px;
+  text-align: center;
+  padding-top: 40px;
+  font-family: "ubuntu", "sans-serif";
+}
+
+.cor2{
+  background: #FFDBB7;
+  height: 100px;
+  width: 70px;
+  text-align: center;
+  padding-top: 40px;
+  font-family: "ubuntu", "sans-serif";
+}
+
+.cor3{
+  background: #74A012;
+  height: 100px;
+  width: 70px;
+  text-align: center;
+  padding-top: 40px;
+  font-family: "ubuntu", "sans-serif";
+}
+
+.pixel1{
+  background: linear-gradient(90deg, transparent, #7724d1, darkblue, #7724d1, transparent);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.pixel1 img{
+  width: 20px;
+  height: 20px;
+}
+
+.regras{
+  margin: 8px 0 8px 0;
+  height: max-height;
+  width: 98%;
+  padding: 30px;
+  border: #2418c7 3px solid;
+  border-radius: 40px;
+  font-family: "ubuntu", "sans-serif";
+  color: white;
+  background: #180147;
+  text-align:center;
+}
+
+.regras a{
+  margin-top: 5px;
+  background: linear-gradient(90deg, blue, darkblue, transparent);
+  text-decoration: underline;
+  color: white;
+}
+
+.regras a:hover{
+  text-shadow: 0 0 5px white;
+  font-style: italic;
+}
+
+.voltar{
+  margin: 50px 0 12px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.voltar a{
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(45, 2, 120, 1) 0%, rgba(105, 0, 171, 1) 100%);
+  border-radius:20px;
+  border: 4px #b46eff solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: "ubuntu", "sans serif";
+}
+
+.voltar a:hover{
+  transform: scale(1.3);
+  filter: brightness(150%);
+  transition: 0.8s;
+}
+
+footer{
+  margin-top: 50px;
+  background-image: url("space.png");
+  background-size: 200px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+}
+
+.redes h2{
+  margin-top: 10px;
+  font-family: "press start 2p";
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(180deg, white, #b2abff);
+  background-clip: text;
+  color: transparent;
+}
+
+.redes a{
+  width: 70%;
+  background: linear-gradient(90deg, darkblue, transparent);
+  text-decoration: none;
+  color: white;
+  font-family: "ubuntu";
+}
+
+.redes a:hover{
+  text-shadow: 0 0 5px white;
+  font-style: italic;
+  background: linear-gradient(90deg, blue, transparent);
+  transition: 0.5s;
+}
+
+.compartilhar{
+  color: white;
+  font-family: "ubuntu", "sans serif";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+textarea{
+  background: linear-gradient(180deg, white, lightblue);
+}
